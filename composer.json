@@ -1,0 +1,20 @@
+{
+	"name": "twizanex/elgg-videos",
+	"description": "Adds ability to upload and display videos on an Elgg site.",
+	"type": "elgg-plugin",
+	"keywords": [
+		"elgg",
+		"plugin"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "tom Ondiba",
+			"email": "twizanex@yahoo.com",
+			"role": "Developer"
+		}
+	],
+	"extra": {
+		"installer-name": "video"
+	}
+}
