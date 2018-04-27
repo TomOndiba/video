@@ -99,6 +99,9 @@ $bootstrap_list_filter_min_js  = $js_url. '/bootstrap-list-filter.min.js';
 	// $video_icon = elgg_view_entity_icon($video, 'small');
 	// $video_icon = $video->getIconURL('medium');
 
+  $has_icon = $video->getIconURL;
+  
+  if ($has_icon){
 	$video_icon = $video->getIconURL([
 		'size' => 'large',
 		// 'type' => 'video',
@@ -116,9 +119,9 @@ $bootstrap_list_filter_min_js  = $js_url. '/bootstrap-list-filter.min.js';
 		'size' => 'medium',
 		// 'type' => 'video',
 	]);
-	
-	$video_url = $video->getURL();
 
+	$video_url = $video->getURL();
+  }
 	
 	
 	

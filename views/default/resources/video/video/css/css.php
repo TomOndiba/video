@@ -119,22 +119,29 @@ $google_page_view =  "";
 	));
 	$author_text = elgg_echo('byline', array($owner_link));
 
+ $has_icon = $video->getIconURL;
+  
+  if ($has_icon){
 	$video_icon = $video->getIconURL([
 		'size' => 'large',
+		// 'type' => 'video',
 	]);
-	
+ 
 	$video_stage_icon = $video->getIconURL([
 		'size' => 'large',
-
+		// 'type' => 'video',
 	]);
+	
 
+    $video_url = $video->getURL();
+ }	
+
+	// $user_icon = $owner->getIconURL('small');
 	$user_icon = $owner->getIconURL([
 		'size' => 'medium',
 		// 'type' => 'video',
 	]);
 	
-	$video_url = $video->getURL();
-
 	
 	
 	
